@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  
+  --color-red-wine: #4a0d15;
+  --color-red-wine-light: #5f151f;
+  --color-red-wine-dark: #33060a;
+  --color-rose-quartz: #f9d1cc;
+  --color-blush: #f3afa6;
+  --color-oat-milk: #fdfaf5;
+  --color-oat-milk-dark: #f6efe2;
+}
+
+body {
+  background-color: var(--color-oat-milk);
+  color: var(--color-red-wine);
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar for luxury brand look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-oat-milk);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-blush);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-red-wine-light);
+}
